@@ -1,0 +1,130 @@
+:root {
+  --clr-purple: #21092F;
+}
+
+/*--------
+Reset
+---------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*--------
+Utility
+---------*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*----------
+Components
+-----------*/
+.bg-purple {
+  display: inline-block;
+  background-color: var(--clr-purple);
+  min-height: 100vh;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.bg-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 9px;
+  letter-spacing: 2px;
+}
+
+form input {
+  width: 38rem;
+  height: 4.5rem;
+  border: 1px solid #DFDEE0;
+  border-radius: 8px;
+  background: transparent;
+  margin-bottom: 2.6rem;
+  font-family: inherit;
+  padding-left: 1.6rem;
+  font-size: 1.8rem;
+  color: var(--clr-purple);
+}
+
+form .input-exp-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+form .exp-date {
+  width: 8rem;
+}
+
+form #cvc {
+  width: 19rem;
+}
+/*# sourceMappingURL=style.css.map */

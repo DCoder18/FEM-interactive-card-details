@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor - Interactive Card Details Form</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="bg-purple"></div>
+
+    <div class="bg-white">
+      <form action="" method="post">
+        <label for="name">Cardholder Name</label>
+        <input id="name" type="text" placeholder="e.g. Jane Appleseed">
+
+        <label for="card-no">Card Number</label>
+        <input id="card-no" type="text" placeholder="e.g. 1234 5678 9123 0000">
+
+        <div class="flex flex-between">
+          <div class="flex flex-column">
+            <label for="exp">Exp. Date (MM/YY)</label>
+            <div class="flex input-exp-date">
+              <input id="exp" class="exp-date exp-date--mm" type="text" maxlength="2" placeholder="MM">
+              <input id="exp" class="exp-date exp-date--yy" type="text" maxlength="2" placeholder="YY">
+            </div>
+          </div>
+          
+          <div class="flex flex-column">
+            <label for="cvc">CVC</label>
+            <input id="cvc" type="text" placeholder="e.g. 123">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>

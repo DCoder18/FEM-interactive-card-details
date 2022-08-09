@@ -1,0 +1,103 @@
+:root {
+  --clr-purple: #21092F;
+}
+
+/*--------
+Reset
+---------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/*--------
+Utility
+---------*/
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+
+/*----------
+Components
+-----------*/
+.bg-purple {
+  display: inline-block;
+  background-color: var(--clr-purple);
+  min-height: 100vh;
+  flex: 30%;
+}
+
+.bg-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  flex: 70%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 9px;
+    letter-spacing: 2px;
+  }
+
+  input {
+    width: 38rem;
+    height: 4.5rem;
+    border: 1px solid #DFDEE0;
+    border-radius: 8px;
+    background: transparent;
+    margin-bottom: 2.6rem;
+    font-family: inherit;
+    padding-left: 1.6rem;
+    font-size: 1.8rem;
+    color: var(--clr-purple);
+  }
+
+  .input-exp-date {
+    display: flex;
+    gap:1rem;
+  }
+
+  .exp-date {
+    width: 8rem;
+  }
+
+  #cvc {
+    width: 19rem;
+  }
+}
