@@ -157,6 +157,37 @@ Components
   margin-top: 2.4rem;
 }
 
+.card-back .placeholder-illustration {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.card-back .placeholder-illustration .text {
+  background-color: #ADB5BE;
+  border-radius: 4px;
+  height: 4px;
+  display: inline-block;
+}
+
+.card-back .placeholder-illustration .text--long {
+  width: 10rem;
+}
+
+.card-back .placeholder-illustration .text--med {
+  width: 4.6rem;
+}
+
+.card-back .placeholder-illustration .text--small {
+  width: 2.2rem;
+}
+
+.card-back .placeholder-illustration .text--xsmall {
+  width: 9px;
+}
+
 .bg-white {
   display: -webkit-box;
   display: -ms-flexbox;
