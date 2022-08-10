@@ -79,6 +79,7 @@ Components
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
+  position: relative;
 }
 
 .card-front,
@@ -94,6 +95,8 @@ Components
 .card-front {
   background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
   padding: 3rem;
+  top: 25%;
+  left: 10vw;
 }
 
 .card-front--no {
@@ -135,7 +138,8 @@ Components
       -ms-flex-align: center;
           align-items: center;
   background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
-  top: 30rem;
+  top: 52%;
+  left: 62%;
   padding: 2.4rem 0;
 }
 
@@ -250,5 +254,46 @@ form .btn {
   font-size: 1.8rem;
   text-transform: none;
   border-radius: 8px;
+}
+
+@media (max-width: 78em) {
+  .card-front {
+    left: auto;
+  }
+  .card-back {
+    left: 20%;
+  }
+}
+
+@media (max-width: 65em) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bg-purple {
+    min-height: 35vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .bg-white {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 8rem;
+  }
+  .card-front {
+    top: 50%;
+    z-index: 1;
+  }
+  .card-back {
+    top: 15%;
+    left: 16%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -64,6 +64,7 @@ Components
   background-color: var(--clr-purple);
   min-height: 100vh;
   flex: 30%;
+  position: relative;
 }
 
 .card-front,
@@ -79,6 +80,8 @@ Components
 .card-front {
   background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
   padding: 3rem;
+  top: 25%;
+  left: min(10vw, 20vw);
 
   &--no {
     font-size: 2.8rem;
@@ -113,7 +116,8 @@ Components
   flex-direction: column;
   align-items: center;
   background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
-  top: 30rem;
+  top: 52%;
+  left: 62%;
   padding: 2.4rem 0;
 
   .black-banner {
@@ -198,5 +202,42 @@ form {
     font-size: 1.8rem;
     text-transform: none;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 78em) {
+  .card-front {
+    left: auto;
+  }
+
+  .card-back {
+    left: 20%;
+  }
+}
+
+@media (max-width: 65em) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .bg-purple {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg-white {
+    align-items: flex-start;
+    padding-top: 8rem;
+  }
+
+  .card-front {
+    top: 50%;
+    z-index: 1;
+  }
+
+  .card-back {
+    top: 15%;
+    left: 16%;
   }
 }
