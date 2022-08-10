@@ -15,7 +15,30 @@
 <body>
 
   <div class="wrapper">
-    <div class="bg-purple"></div>
+    <div class="bg-purple">
+      <div class="card-front">
+        <div class="flex flex-center-y">
+          <div class="big-circle"></div>
+          <div class="small-circle"></div>
+        </div>
+        
+        <div class="card-data">
+          <div class="card-front--no">0000 0000 0000 0000</div>
+
+          <div class="flex flex-between">
+            <div class="card-front--name">Jane Appleseed</div>
+            <div><span class="card-front--exp-month">00</span>/<span class="card-front--exp-year">00</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-back">
+        <div class="black-banner"></div>
+        <div class="grey-banner">
+          <span class="card-back--cvc">000</span>
+        </div>
+      </div>
+    </div>
 
     <div class="bg-white">
       <form action="" method="post">
@@ -39,8 +62,6 @@
             <input id="cvc" class="cvc" type="text" placeholder="e.g. 123">
           </div>
         </div>
-
-        <p class="test"></p>
 
         <a class="btn">Confirm</a>
       </form>
