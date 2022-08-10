@@ -1,5 +1,6 @@
 :root {
   --clr-purple: #21092F;
+  --clr-purple-gradient: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
 }
 
 /*--------
@@ -113,18 +114,56 @@ form input {
   color: var(--clr-purple);
 }
 
-form .input-exp-date {
+form input::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.25;
+}
+
+form input:-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.25;
+}
+
+form input::-ms-input-placeholder {
+  color: inherit;
+  opacity: 0.25;
+}
+
+form input::placeholder {
+  color: inherit;
+  opacity: 0.25;
+}
+
+form input:focus, form input:focus-visible {
+  border-color: #6348FE;
+  outline: none;
+}
+
+form .exp-date-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
 
-form .exp-date {
+form .exp-date-container .exp-date {
   width: 8rem;
 }
 
-form #cvc {
+form .cvc {
   width: 19rem;
+}
+
+form .btn {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1.6rem 0;
+  color: #ffffff;
+  background-color: var(--clr-purple);
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: none;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */
