@@ -10,37 +10,19 @@ const elExpiryMonthDisplay = document.querySelector('.card-front--exp-month')
 const elExpiryYearDisplay = document.querySelector('.card-front--exp-year')
 const elCVCDisplay = document.querySelector('.card-back--cvc')
 
-// Card Holder Name
-elCardHolderName.addEventListener('change', (event) => {
-  let cardHolderName = document.querySelector('.name').value;
-  elNameDisplay.textContent = cardHolderName
-  console.log(cardHolderName);
-})
+const inputElArray = [elCardHolderName, elCardNo, elExpDateMonth, elExpiryYearDisplay, elCVC]
+const displayElArray = [elNameDisplay, elNumberDisplay, elExpiryMonthDisplay, elExpiryYearDisplay, elCVCDisplay]
+const q = ['.name', '.card-no', '.exp-date--mm', '.exp-date--yy', '.cvc']
 
-//Card Number
-elCardNo.addEventListener('change', (event) => {
-  const cardNo = document.querySelector('.card-no').value;
-  elNumberDisplay.textContent = cardNo
-  console.log(cardNo);
-})
+function updateCardDisplay() {
+  inputElArray.forEach((input_el, i) => {
+    const display_el = displayElArray[i];
+    const query = q[i];
 
-//Expiry Date Month
-elExpDateMonth.addEventListener('change', (event) => {
-  const cardExpiryMonth = document.querySelector('.exp-date--mm').value;
-  elExpiryMonthDisplay.textContent = cardExpiryMonth
-  console.log(cardExpiryMonth);
-})
+    input_el.addEventListener('change', (event) => {
+      display_el.textContent = document.querySelector(query).value;
+    })
+  })
+}
 
-//Expiry Date Year
-elExpDateYear.addEventListener('change', (event) => {
-  const cardExpiryYear = document.querySelector('.exp-date--yy').value;
-  elExpiryYearDisplay.textContent = cardExpiryYear
-  console.log(cardExpiryYear);
-})
-
-//CVC
-elCVC.addEventListener('change', (event) => {
-  const cardCVC = document.querySelector('.cvc').value;
-  elCVCDisplay.textContent = cardCVC
-  console.log(cardCVC);
-})
+updateCardDisplay()
