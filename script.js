@@ -1,8 +1,76 @@
-// const elCardHolderName = document.querySelector('.name')
-$(".name").change(function() {
-  $(".card-front--name").text($(".name").val)
-  // display_el.textContent = document.querySelector(query).value;
-})
+// $(".name").change(function() {
+//   alert("This workd.")
+//   $(".card-front--name").text($(".name").val())
+// })
+
+$(document).ready( function () {
+  const displayElArray = []
+  const inputElArray = []
+  // let k = ''
+
+
+
+  $(".card-display").each(function(i, elDisplay) {
+    displayElArray.push(elDisplay)
+  });
+
+  $(".card-input").each(function(j, elInputs) {
+    // inputElArray.push(elInputs)
+    elInputs.addEventListener('change', (event) => {
+      console.log(elInputs[j]);
+      // displayElArray[j].text()
+    })
+    // console.log(elInputs);
+
+    // console.log(elInputs);
+    // elInputs[i].change(function() {
+    //   displayElArray[j].text(inputElArray[i].val())
+    // })
+  });
+
+  // $.each(inputElArray, function(i) {
+  //   const display_el = displayElArray[i];
+  //   const input_el = inputElArray[i];
+  //   console.log(display_el);
+  //   console.log(input_el);
+    
+  //   input_el.addEventListener('change', (event) => {
+  //     console.log($(".name").val());
+  //     display_el.text(input_el.val())
+  //   })
+  // })
+
+
+  // $.each(inputElArray, function(k, inputs) {
+    
+    // console.log(inputElArray[k]);
+    // inputElArray[k].change(function() {
+    // inputElArray[k].change(function() {
+      // console.log('workd');
+      // displayElArray[l].text(inputs.val())
+    // })
+    // inputs[k].change(function() {
+    //   displayElArray[0].text(inputs.val())
+    // })
+    // console.log(inputs, k, inputElArray);
+    // console.log(inputElArray[k]);
+    // inputElArray[i].change(function() {
+    //   displayElArray[j].text(inputElArray[i].val())
+    // })
+  // })
+
+
+  // console.log(displayElArray);
+  // console.log(inputElArray);
+
+});
+
+
+// function getElements() {
+//   $('.card-display').each( fuction (i)) {
+//     console.log('')
+//   }
+// }
 
 
 
