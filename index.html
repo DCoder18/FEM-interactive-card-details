@@ -47,13 +47,20 @@
 
     <div class="bg-white">
       <form action="" method="post">
-        <label for="name">Cardholder Name</label>
-        <input id="name" class="card-input name" type="text" placeholder="e.g. Jane Appleseed">
 
-        <label for="card-no">Card Number</label>
-        <input id="card-no" class="card-input card-no" type="text" maxlength="20" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="flex flex-column form-group">
+          <label for="name">Cardholder Name</label>
+          <input id="name" class="card-input name" type="text" placeholder="e.g. Jane Appleseed">
+        </div>
 
-        <div class="flex flex-between">
+        <div class="flex flex-column form-group">
+          <label for="card-no">Card Number</label>
+          <input id="card-no" class="card-input card-no" type="text" maxlength="20" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+
+
+       
+        <div class="flex form-group flex-between">
           <div class="flex flex-column">
             <label for="exp">Exp. Date (MM/YY)</label>
             <div class="flex exp-date-container">
@@ -62,9 +69,12 @@
             </div>
           </div>
           
-          <div class="flex flex-column">
-            <label for="cvc">CVC</label>
-            <input id="cvc" class="card-input cvc" type="text" maxlength="3" placeholder="e.g. 123">
+          
+          <div class="form-group">
+            <div class="flex flex-column">
+              <label for="cvc">CVC</label>
+              <input id="cvc" class="card-input cvc" type="text" maxlength="3" placeholder="e.g. 123">
+            </div>
           </div>
         </div>
 

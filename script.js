@@ -32,19 +32,30 @@ $(document).ready( function () {
     })
   })
 
-  
-
-
   // Helper Functions
   function validateInput(input) {
     const txtblank = "<p>Can't be blank</p>"
-    if(! $(`#${input.id}`).val())
-      $(`#${input.id}`).after(txtblank)
-      // alert('tis empty!')
+
+    for(const el of inputElArray)  {
+      if(! $(`#${el.id}`).val())
+        $(`.form-group`).after(txtblank)
     }
+
+    $.each(inputElArray, function(i, el) {
+      const isEmpty = false
+
+      if(! $(`#${el.id}`).val())
+        isEmpty = true
+      })
+
+      if(! isEmpty)
+        $(`.form-group`).after(txtblank)
+
+  }
+    // const txtblank = "<p>Can't be blank</p>"
+    // if(! $(`#${input.id}`).val())
+    //   $(`.form-group`).after(txtblank)
+    //   alert('tis empty!')
+    // }
+  
 })
-
-
-
-
-
