@@ -165,7 +165,7 @@ form {
 }
 form label {
   font-size: 1.2rem;
-  margin-bottom: 9px;
+  margin: 2.6rem 0 0.9rem;
   letter-spacing: 2px;
 }
 form input {
@@ -174,7 +174,7 @@ form input {
   border: 1px solid #DFDEE0;
   border-radius: 8px;
   background: transparent;
-  margin-bottom: 2.6rem;
+  margin-bottom: 1rem;
   font-family: inherit;
   padding-left: 1.6rem;
   font-size: 1.8rem;
